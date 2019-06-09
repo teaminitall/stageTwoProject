@@ -51,6 +51,6 @@ gulp.task('default', ['message', 'copyHtml', 'imageMin', 'minify', 'sass']);
 gulp.task('watch', function() {
 	gulp.watch('src/js/*.js', ['minify']);
 	gulp.watch('src/img/*', ['imageMin']);
-	gulp.watch('src/sass/*.sass', ['sass']);
+	gulp.watch('src/scss/*.scss', ['sass']);
 	gulp.watch('src/*.html', ['copyHtml']);
 });
