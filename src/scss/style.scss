@@ -5,6 +5,63 @@ $color-Subtitle: #8d8d8d;
 $color-Bg-Grey: #252627;
 $color-Theme-Red: #fc0853;
 
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: '微软雅黑', Georgia, Serif;
+}
+
+a {
+	text-decoration: none;
+}
+
 body {
 	background: $color-Bg-Grey;
+}
+
+header {
+	background: $color-Bg-Black;
+	display: flex;
+	justify-content: space-between;
+	height: 59px;
+	#logo {
+		a {
+			display: block;
+			width: 57px;
+			height: 54px;
+			color: white;
+			background: black;
+			font-size: 8px;
+			text-align: center;
+			span {
+				display: block;
+				margin-top: -3px;
+			}
+			img {
+				display: block;
+				margin: 5px 15px;
+			}
+			h1 {
+				text-indent: -9999px;
+			}
+		}
+	}
+	nav {
+		ul {
+			display: flex;
+			width: 420px;
+			justify-content: space-between;
+			line-height: 59px;
+			li {
+				a {
+					display: none;
+					color: $color-Theme-Green;
+					:hover {
+						display: block;
+					}
+				}
+			}
+		}
+	}
 }
