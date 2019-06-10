@@ -14,7 +14,6 @@ initial L 小组成员： 李阳春 刘杨 李琛
 
 这是另外一行新的代码
 
-背景字体样式： 1.<link href='http://cdn.webfont.youziku.com/webfonts/nomal/130825/45817/5cfe039bf629d806e0a9ba10.css' rel='stylesheet' type='text/css' />
+背景字体样式：
+<!-- 1.<link href='http://cdn.webfont.youziku.com/webfonts/nomal/130825/45817/5cfe039bf629d806e0a9ba10.css' rel='stylesheet' type='text/css' /> -->
 2.font-family:'ChannelSlanted2';
-
-页面主题内容字母划过动画效果： 1.引用 animate.min.css 样式文件 2.给 HTML 加上类名 animated rubberBand
