@@ -1,2 +1,43 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: '微软雅黑', Georgia, Serif; }
+
+a {
+  text-decoration: none; }
+
 body {
   background: #252627; }
+
+header {
+  background: #181818;
+  display: flex;
+  justify-content: space-between;
+  height: 59px; }
+  header #logo a {
+    display: block;
+    width: 57px;
+    height: 54px;
+    color: white;
+    background: black;
+    font-size: 8px;
+    text-align: center; }
+    header #logo a span {
+      display: block;
+      margin-top: -3px; }
+    header #logo a img {
+      display: block;
+      margin: 5px 15px; }
+    header #logo a h1 {
+      text-indent: -9999px; }
+  header nav ul {
+    display: flex;
+    width: 420px;
+    justify-content: space-between;
+    line-height: 59px; }
+    header nav ul li a {
+      display: block;
+      color: #08fdd8;
+      text-align: center; }
