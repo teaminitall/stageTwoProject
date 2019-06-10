@@ -17,3 +17,4 @@ initial L 小组成员： 李阳春 刘杨 李琛
 背景字体样式：
 <!-- 1.<link href='http://cdn.webfont.youziku.com/webfonts/nomal/130825/45817/5cfe039bf629d806e0a9ba10.css' rel='stylesheet' type='text/css' /> -->
 2.font-family:'ChannelSlanted2';
+Creating a new branch is quick
