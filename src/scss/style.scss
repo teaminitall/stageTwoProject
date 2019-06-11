@@ -4,6 +4,8 @@ $color-Italic: #515152;
 $color-Subtitle: #8d8d8d;
 $color-Bg-Grey: #252627;
 $color-Theme-Red: #fc0853;
+$opacity-100: 100;
+$opacity-0: 0;
 
 * {
 	margin: 0;
@@ -29,7 +31,8 @@ header {
 		a {
 			display: block;
 			width: 57px;
-			height: 54px;
+			height: 59px;
+			overflow: hidden;
 			color: white;
 			background: black;
 			font-size: 8px;
@@ -40,7 +43,7 @@ header {
 			}
 			img {
 				display: block;
-				margin: 5px 15px;
+				margin: 11px 14px;
 			}
 			h1 {
 				text-indent: -9999px;
@@ -53,11 +56,50 @@ header {
 			width: 420px;
 			justify-content: space-between;
 			line-height: 59px;
+			height: 59px;
 			li {
+				position: relative;
+				flex: 1;
+				text-align: center;
 				a {
-					display: block;
-					color: $color-Theme-Green;
 					text-align: center;
+					&:hover .headline {
+						opacity: $opacity-100;
+						transition: all 1s ease-out;
+					}
+					&:hover .iconfont {
+						opacity: $opacity-0;
+						transition: all 1s ease-out;
+					}
+				}
+				.headline {
+					opacity: $opacity-0;
+					color: $color-Theme-Green;
+				}
+				.iconfont {
+					opacity: $opacity-100;
+					position: absolute;
+					left: 23px;
+					font-size: 22px;
+					color: #4d4d4e;
+				}
+			}
+		}
+	}
+	#socialBar {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			width: 136px;
+			line-height: 59px;
+			li {
+				.iconfont {
+					color: #4d4d4e;
+					font-size: 12px;
+					&:hover {
+						color: $color-Theme-Green;
+						transition: all 1s ease-out;
+					}
 				}
 			}
 		}
