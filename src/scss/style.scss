@@ -7,6 +7,10 @@ $color-Theme-Red: #fc0853;
 $opacity-100: 100;
 $opacity-0: 0;
 
+#on-page {
+	color: $color-Theme-Green;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -27,6 +31,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	height: 59px;
+
 	#logo {
 		a {
 			display: block;
@@ -37,19 +42,23 @@ header {
 			background: black;
 			font-size: 8px;
 			text-align: center;
+
 			span {
 				display: block;
 				margin-top: -3px;
 			}
+
 			img {
 				display: block;
 				margin: 11px 14px;
 			}
+
 			h1 {
 				text-indent: -9999px;
 			}
 		}
 	}
+
 	nav {
 		ul {
 			display: flex;
@@ -57,25 +66,31 @@ header {
 			justify-content: space-between;
 			line-height: 59px;
 			height: 59px;
+
 			li {
 				position: relative;
 				flex: 1;
 				text-align: center;
+
 				a {
 					text-align: center;
+
 					&:hover .headline {
 						opacity: $opacity-100;
 						transition: all 1s ease-out;
 					}
+
 					&:hover .iconfont {
 						opacity: $opacity-0;
 						transition: all 1s ease-out;
 					}
 				}
+
 				.headline {
 					opacity: $opacity-0;
 					color: $color-Theme-Green;
 				}
+
 				.iconfont {
 					opacity: $opacity-100;
 					position: absolute;
@@ -86,16 +101,19 @@ header {
 			}
 		}
 	}
+
 	#socialBar {
 		ul {
 			display: flex;
 			justify-content: space-between;
 			width: 136px;
 			line-height: 59px;
+
 			li {
 				.iconfont {
 					color: #4d4d4e;
 					font-size: 12px;
+
 					&:hover {
 						color: $color-Theme-Green;
 						transition: all 1s ease-out;
