@@ -1,4 +1,7 @@
 @charset "UTF-8";
+#on-page {
+  color: #08fdd8; }
+
 * {
   margin: 0;
   padding: 0;
