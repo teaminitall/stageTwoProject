@@ -1,0 +1,242 @@
+$opacity-100: 100;
+$opacity-0: 0;
+$color-Bg-Grey: #252627;
+$color-Theme-Green: #08fdd8;
+$color-Theme-Red: #fc0853;
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: '微软雅黑', Georgia, Serif;
+}
+body {
+	background: $color-Bg-Grey;
+}
+main {
+	width: 100%;
+	#Cart {
+		position: fixed;
+		right: 0;
+		top: 100px;
+		.gwc {
+			float: right;
+			display: inline-block;
+			width: 40px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			border-radius: 5px 0 0 5px;
+			color: $color-Theme-Green;
+			cursor: pointer;
+			border: 1px solid $color-Theme-Green;
+			&:hover {
+				background: $color-Theme-Green;
+				color: #000;
+			}
+		}
+		.shoppingCart {
+			display: inline-block;
+			width: 60px;
+			height: 30px;
+			background: $color-Theme-Red;
+			text-align: center;
+			line-height: 30px;
+			font-size: 14px;
+			color: #fff;
+			border-radius: 5px 0 0 5px;
+			cursor: pointer;
+			display: none;
+		}
+	}
+	.onlineShopping {
+		width: 30%;
+		height: 400px;
+		overflow-y: auto;
+		background: #fff;
+		position: fixed;
+		right: -30%;
+		top: 150px;
+		z-index: 99;
+		opacity: 0.6;
+		border-radius: 8px;
+		ol {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			height: 30px;
+			border-bottom: 1px solid #ccc;
+			li {
+				flex: 1;
+				text-align: center;
+				line-height: 30px;
+				font-weight: bold;
+			}
+		}
+		ul {
+			width: 100%;
+			li {
+				font-size: 12px;
+				width: 100%;
+				height: 30px;
+				display: flex;
+				margin: 26px 0;
+				align-items: center;
+				justify-content: space-around;
+				.span01 {
+					flex: 1;
+					text-align: center;
+				}
+				.span02 {
+					flex: 1;
+					text-align: center;
+				}
+				.span03 {
+					flex: 1;
+					text-align: center;
+				}
+
+				.amount {
+					flex: 1;
+					text-align: center;
+					.nr {
+						width: 20px;
+						text-align: center;
+					}
+					span {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.commodity {
+		width: 100%;
+		.commodity_bt {
+			text-align: center;
+			h2 {
+				color: #fff;
+				font-size: 40px;
+			}
+			span {
+				display: block;
+				width: 106px;
+				height: 4px;
+				background: #fff;
+				margin: 0 auto;
+			}
+		}
+		.show {
+			width: 70%;
+			min-height: 50px;
+			margin: 30px auto;
+			display: flex;
+			flex-wrap: wrap;
+
+			.show01 {
+				width: 33%;
+				min-height: 428px;
+				text-align: center;
+				position: relative;
+				cursor: pointer;
+				margin: 10px 0;
+				.img01 {
+					width: 100%;
+					opacity: $opacity-100;
+				}
+				.img02 {
+					width: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+					opacity: $opacity-0;
+				}
+				.but {
+					border: 0;
+					width: 80%;
+					height: 52px;
+					background: #b4b4b4;
+					opacity: 0.8;
+					text-align: center;
+					font-weight: bold;
+					cursor: pointer;
+					margin-top: 20px;
+					&:hover {
+						background: #fd0853;
+					}
+					border-radius: 8px;
+				}
+				h3 {
+					font-size: 17px;
+					color: #eee6e6;
+				}
+				&:hover .img01 {
+					opacity: $opacity-0;
+					transition: all 1s ease-out;
+				}
+				&:hover .img02 {
+					opacity: $opacity-100;
+					transition: all 1s ease-out;
+				}
+			}
+		}
+		#commodity_POSTERS {
+			margin: 50px 0;
+			.commodity_bt {
+				span {
+					width: 90px;
+				}
+			}
+			.POSTERS_show {
+				width: 70%;
+				min-height: 50px;
+				margin: 50px auto;
+				display: flex;
+				flex-wrap: wrap;
+				.playbill {
+					width: 50%;
+					min-height: 100px;
+					text-align: center;
+					position: relative;
+					cursor: pointer;
+					.img01 {
+						width: 100%;
+						opacity: $opacity-100;
+					}
+					.img02 {
+						position: absolute;
+						left: 0;
+						top: 25px;
+						width: 100%;
+						opacity: $opacity-0;
+					}
+					h3 {
+						font-size: 17px;
+						color: #eee6e6;
+						margin-top: 50px;
+					}
+					.but {
+						border: 0;
+						width: 80%;
+						height: 52px;
+						background: #b4b4b4;
+						opacity: 0.8;
+						text-align: center;
+						font-weight: bold;
+						cursor: pointer;
+						margin-top: 20px;
+						border-radius: 8px;
+
+						&:hover {
+							background: $color-Theme-Red;
+						}
+					}
+					&:hover .img02 {
+						opacity: $opacity-100;
+						transition: all 1s ease-out;
+					}
+				}
+			}
+		}
+	}
+}

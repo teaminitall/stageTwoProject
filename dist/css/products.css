@@ -1,0 +1,193 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: '微软雅黑', Georgia, Serif; }
+
+body {
+  background: #252627; }
+
+main {
+  width: 100%; }
+  main #Cart {
+    position: fixed;
+    right: 0;
+    top: 100px; }
+    main #Cart .gwc {
+      float: right;
+      display: inline-block;
+      width: 40px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 5px 0 0 5px;
+      color: #08fdd8;
+      cursor: pointer;
+      border: 1px solid #08fdd8; }
+      main #Cart .gwc:hover {
+        background: #08fdd8;
+        color: #000; }
+    main #Cart .shoppingCart {
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      background: #fc0853;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 5px 0 0 5px;
+      cursor: pointer;
+      display: none; }
+  main .onlineShopping {
+    width: 30%;
+    height: 400px;
+    overflow-y: auto;
+    background: #fff;
+    position: fixed;
+    right: -30%;
+    top: 150px;
+    z-index: 99;
+    opacity: 0.6;
+    border-radius: 8px; }
+    main .onlineShopping ol {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      height: 30px;
+      border-bottom: 1px solid #ccc; }
+      main .onlineShopping ol li {
+        flex: 1;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold; }
+    main .onlineShopping ul {
+      width: 100%; }
+      main .onlineShopping ul li {
+        font-size: 12px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        margin: 26px 0;
+        align-items: center;
+        justify-content: space-around; }
+        main .onlineShopping ul li .span01 {
+          flex: 1;
+          text-align: center; }
+        main .onlineShopping ul li .span02 {
+          flex: 1;
+          text-align: center; }
+        main .onlineShopping ul li .span03 {
+          flex: 1;
+          text-align: center; }
+        main .onlineShopping ul li .amount {
+          flex: 1;
+          text-align: center; }
+          main .onlineShopping ul li .amount .nr {
+            width: 20px;
+            text-align: center; }
+          main .onlineShopping ul li .amount span {
+            cursor: pointer; }
+  main .commodity {
+    width: 100%; }
+    main .commodity .commodity_bt {
+      text-align: center; }
+      main .commodity .commodity_bt h2 {
+        color: #fff;
+        font-size: 40px; }
+      main .commodity .commodity_bt span {
+        display: block;
+        width: 106px;
+        height: 4px;
+        background: #fff;
+        margin: 0 auto; }
+    main .commodity .show {
+      width: 70%;
+      min-height: 50px;
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap; }
+      main .commodity .show .show01 {
+        width: 33%;
+        min-height: 428px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        margin: 10px 0; }
+        main .commodity .show .show01 .img01 {
+          width: 100%;
+          opacity: 100; }
+        main .commodity .show .show01 .img02 {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        main .commodity .show .show01 .but {
+          border: 0;
+          width: 80%;
+          height: 52px;
+          background: #b4b4b4;
+          opacity: 0.8;
+          text-align: center;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 20px;
+          border-radius: 8px; }
+          main .commodity .show .show01 .but:hover {
+            background: #fd0853; }
+        main .commodity .show .show01 h3 {
+          font-size: 17px;
+          color: #eee6e6; }
+        main .commodity .show .show01:hover .img01 {
+          opacity: 0;
+          transition: all 1s ease-out; }
+        main .commodity .show .show01:hover .img02 {
+          opacity: 100;
+          transition: all 1s ease-out; }
+    main .commodity #commodity_POSTERS {
+      margin: 50px 0; }
+      main .commodity #commodity_POSTERS .commodity_bt span {
+        width: 90px; }
+      main .commodity #commodity_POSTERS .POSTERS_show {
+        width: 70%;
+        min-height: 50px;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap; }
+        main .commodity #commodity_POSTERS .POSTERS_show .playbill {
+          width: 50%;
+          min-height: 100px;
+          text-align: center;
+          position: relative;
+          cursor: pointer; }
+          main .commodity #commodity_POSTERS .POSTERS_show .playbill .img01 {
+            width: 100%;
+            opacity: 100; }
+          main .commodity #commodity_POSTERS .POSTERS_show .playbill .img02 {
+            position: absolute;
+            left: 0;
+            top: 25px;
+            width: 100%;
+            opacity: 0; }
+          main .commodity #commodity_POSTERS .POSTERS_show .playbill h3 {
+            font-size: 17px;
+            color: #eee6e6;
+            margin-top: 50px; }
+          main .commodity #commodity_POSTERS .POSTERS_show .playbill .but {
+            border: 0;
+            width: 80%;
+            height: 52px;
+            background: #b4b4b4;
+            opacity: 0.8;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 8px; }
+            main .commodity #commodity_POSTERS .POSTERS_show .playbill .but:hover {
+              background: #fc0853; }
+          main .commodity #commodity_POSTERS .POSTERS_show .playbill:hover .img02 {
+            opacity: 100;
+            transition: all 1s ease-out; }
