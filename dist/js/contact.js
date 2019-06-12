@@ -1,0 +1,1 @@
+var map=new BMap.Map("map-coming"),point=new BMap.Point(114.02597366,22.54605355);map.centerAndZoom(point,12);var geolocation=new BMap.Geolocation;geolocation.getCurrentPosition(function(a){if(this.getStatus()==BMAP_STATUS_SUCCESS){var t=new BMap.Marker(a.point);map.addOverlay(t),map.panTo(a.point)}else alert("failed"+this.getStatus())},{enableHighAccuracy:!0});

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>与我联系</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contactCss.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link href="http://cdn.webfont.youziku.com/webfonts/nomal/130825/45817/5cfe039bf629d806e0a9ba10.css"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript"
+        src="http://api.map.baidu.com/api?v=2.0&ak=BB2w109XHAfZ571Uog2b0lhXkTqg0rb2"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo_small.png" alt="" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li> 
+                    <a href="index.html"><span class="iconfont icon-fangzi"></span><span class="headline">主页</span></a>
+                </li>
+                <li>
+                    <a href="about.html"><span class="iconfont icon-geren"></span><span class="headline">关于</span></a>
+                </li>
+                <li>
+                    <a href="skills.html"><span class="iconfont icon-chilun"></span><span class="headline">技能</span></a>
+                </li>
+                <li>
+                    <a href="showcase.html"><span class="iconfont icon-yj"></span><span class="headline">展示</span></a>
+                </li>
+                <li>
+                    <a href="products.html"><span class="iconfont icon-gwc"></span><span class="headline">周边</span></a>
+                </li>
+                <li>
+                    <a href="contact.html"><span class="iconfont icon-youjian"></span><span
+                            class="headline">联系</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div id="socialBar">
+            <ul>
+                <li>
+                    <a href="www.163.com/rss"><span class="iconfont icon-xinhao"></span></a>
+                </li>
+                <li>
+                    <a href="www.facebook.com"><span class="iconfont icon-f"></span></a>
+                </li>
+                <li>
+                    <a href="www.linkedin.com"><span class="iconfont icon-in"></span></a>
+                </li>
+                <li>
+                    <a href="www.twitter.com"><span class="iconfont icon-bird"></span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="contactpage">
+
+            <div class="skills">
+                <!-- 顶部左侧body悬浮 -->
+                <span class="top-tags skill-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+
+                <!-- 左部中侧文字form表单 -->
+                <div class="text-words">
+                    <h1>联系我们</h1>
+                    <p>如果您有任何问题，请使用下面的表格与我们联系…</p>
+                    <div class="contact-us">
+                        <form action="#" id="contact-form">
+                            <ul>
+                                <li><input class="input-text" type="text" name="name" placeholder="姓名"></li>
+                                <li><input class="input-text" type="text" name="email" placeholder="邮箱"></li>
+                                <li><input class="input-text" type="text" name="subject" placeholder="问题"></li>
+                                <li><textarea class="input-text textarea" name="message" placeholder="具体内容"></textarea>
+                                </li>
+                                <li><input class="input-text" type="submit" name="subject" value="发送"></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- 左部中侧任务完成 -->
+                <!-- 右侧地图栏目开始 -->
+                <div class="map-start">
+                    <div id="map-coming">
+
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    // 百度地图API功能
+                    var map = new BMap.Map("map-coming");
+                    var point = new BMap.Point(114.02597366, 22.54605355);
+                    map.centerAndZoom(point, 12);
+
+                    var geolocation = new BMap.Geolocation();
+                    geolocation.getCurrentPosition(function (r) {
+                        if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+                            var mk = new BMap.Marker(r.point);
+                            map.addOverlay(mk);
+                            map.panTo(r.point);
+                        }
+                        else {
+                            alert('failed' + this.getStatus());
+                        }
+                    }, { enableHighAccuracy: true })
+                    //关于状态码
+                    //BMAP_STATUS_SUCCESS	检索成功。对应数值“0”。
+                    //BMAP_STATUS_CITY_LIST	城市列表。对应数值“1”。
+                    //BMAP_STATUS_UNKNOWN_LOCATION	位置结果未知。对应数值“2”。
+                    //BMAP_STATUS_UNKNOWN_ROUTE	导航结果未知。对应数值“3”。
+                    //BMAP_STATUS_INVALID_KEY	非法密钥。对应数值“4”。
+                    //BMAP_STATUS_INVALID_REQUEST	非法请求。对应数值“5”。
+                    //BMAP_STATUS_PERMISSION_DENIED	没有权限。对应数值“6”。(自 1.1 新增)
+                    //BMAP_STATUS_SERVICE_UNAVAILABLE	服务不可用。对应数值“7”。(自 1.1 新增)
+                    //BMAP_STATUS_TIMEOUT	超时。对应数值“8”。(自 1.1 新增)
+                </script>
+
+                <!-- 右侧地图栏目结束 -->
+                <!-- 左侧底部body -->
+                <span class="skill-tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br> &lt;/html&gt; </span>
+
+            </div>
+
+
+        </div>
+
+    </main>
+</body>
+
+
+</html>
