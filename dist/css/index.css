@@ -84,6 +84,9 @@ h4 {
     color: #252627;
     outline: 0; }
 
+.animation-logo {
+  animation: myanim2 0.5s 1s backwards; }
+
 .bottom-tags {
   position: absolute;
   clear: both;
