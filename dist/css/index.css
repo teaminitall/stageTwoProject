@@ -1,0 +1,104 @@
+.handWrite {
+  display: inline-block;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 17px;
+  color: #515152;
+  margin-top: 12px; }
+
+.bg {
+  width: 400px;
+  z-index: 0;
+  height: 609px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin-top: 4%;
+  transform: rotate(-14deg); }
+
+.jb {
+  z-index: 0; }
+
+.text-zone {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40%;
+  max-height: 90%;
+  z-index: 1; }
+  .text-zone p {
+    color: white;
+    font-size: 45px;
+    font-weight: bold; }
+  .text-zone:before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -25px; }
+
+.hi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .hi p {
+    color: white;
+    font-size: 45px; }
+  .hi:after {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 25px; }
+
+h4 {
+  color: #8d8d8d;
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  -webkit-animation: myanim2 1s 1.8s backwards;
+  animation: myanim2 1s 1.8s backwards; }
+
+.flat-button {
+  color: #08fdd8;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #08fdd8;
+  margin-top: 25px;
+  float: left;
+  border-radius: 3px;
+  -webkit-animation: myanim2 1s 1.8s backwards;
+  animation: myanim2 1s 1.8s backwards; }
+  .flat-button:hover {
+    background: #08fdd8;
+    color: #252627;
+    outline: 0; }
+
+.animation-logo {
+  animation: myanim2 0.5s 1s backwards; }
+
+.bottom-tags {
+  position: absolute;
+  clear: both;
+  left: 20px;
+  margin-top: 22px;
+  bottom: 0;
+  font-size: 18px;
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152; }
+
+@keyframes myanim2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
