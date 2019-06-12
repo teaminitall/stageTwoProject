@@ -1,0 +1,1 @@
+$(function(){$("#Cart i").mousemove(function(){$(".shoppingCart").css("display","inline-block")}),$("html").mousemove(function(t){"shoppingCart"!=$(t.target).attr("class")&&"iconfont icon-gouwuche gwc"!=$(t.target).attr("class")&&"Cart"!=$(t.target).closest().attr("id")&&$(".shoppingCart").css("display","none")})});
