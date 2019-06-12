@@ -1,171 +1,171 @@
+$font-style-hand: 'La Belle Aurore', cursive;
 .clearfix {
-  *zoom: 1;
+	*zoom: 1;
 }
 
 .clearfix:after {
-  content: " ";
-  display: table;
-  height: 0;
-  line-height: 0;
-  clear: both;
-  overflow: hidden;
+	content: ' ';
+	display: table;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	overflow: hidden;
 }
 #contactpage {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+	width: 100%;
+	height: 100%;
+	position: absolute;
 }
 .skills {
-  will-change: contents;
-  width: 100%;
-  height: 90%;
-  position: absolute;
-  margin: 0 auto;
-  z-index: 1;
-  min-height: 566px;
-  transform-style: preserve-3d;
-  overflow: hidden;
+	will-change: contents;
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	margin: 0 auto;
+	z-index: 1;
+	min-height: 566px;
+	transform-style: preserve-3d;
+	overflow: hidden;
 
-  .top-tags {
-    bottom: auto;
-    top: 0;
-  }
+	.top-tags {
+		bottom: auto;
+		top: 0;
+	}
 }
 .skill-tags {
-  color: #515152;
-  position: absolute;
-  bottom: 50px;
-  left: 80px;
-  font-size: 12px;
-  font-family: "ChannelSlanted2", cursive;
+	color: #515152;
+	position: absolute;
+	bottom: 50px;
+	left: 80px;
+	font-size: 17px;
+	font-family: $font-style-hand;
 }
 .text-words {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 30%;
-  vertical-align: middle;
-  display: table-cell;
-  max-height: 90%;
-  .shake {
-    will-change: transform;
-    transition: all 0.3s ease-out;
-  }
-  .contact-us {
-    width: 100%;
-  }
-  #contact-form {
-    .input-text {
-      width: 100%;
-      border: 0;
-      background: #37393b;
-      height: 50px;
-      font-size: 16px;
-      color: #8d8d8d;
-      padding: 0 20px;
-      box-sizing: border-box;
-    }
-    ul {
-      padding: 0;
-      margin: 0;
-      li {
-        clear: both;
-        overflow: hidden;
-        display: block;
-        &:nth-of-type(1),
-        &:nth-of-type(2) {
-          width: 49%;
-          float: left;
-          clear: none;
-          margin-left: 0;
-          margin-bottom: 10px;
-        }
-        &:nth-of-type(2) {
-          margin-left: 2%;
-        }
-        &:nth-of-type(4) textarea {
-          width: 100%;
-          height: 50px;
-          min-height: 150px;
-          margin: 10px 0;
-          padding: 20px;
-          box-sizing: border-box;
-        }
-        &:nth-of-type(5) input {
-          color: #08fdd8;
-          font-size: 14px;
-          letter-spacing: 3px;
-          padding: 15px 10px;
-          border: 1px solid #08fdd8;
-          width: auto;
-          height: auto;
-          border-radius: 4px;
-          float: right;
-          text-align: center;
-          margin-right: 10px;
-          transition: all 0.2s linear;
-          &:hover {
-            color: #000;
-            background: #08fdd8;
-          }
-        }
-      }
-    }
-  }
-  h1 {
-    font-size: 53px;
-    font-family: 微软雅黑;
-    color: #08fdd8;
-    font-weight: 600;
-    line-height: 50px;
-    margin-top: 0;
-    margin-bottom: 40px;
-    position: relative;
-    display: block;
-    &::before {
-      content: "<h1>";
-      font-family: "ChannelSlanted2", cursive;
-      color: #515152;
-      font-size: 12px;
-      position: absolute;
-      margin-top: -35px;
-    }
-    &::after {
-      content: "<h1>";
-      font-family: "ChannelSlanted2", cursive;
-      color: #515152;
-      font-size: 12px;
-      position: absolute;
-      bottom: -40px;
-      left: 0px;
-    }
-  }
-  p {
-    color: #fff;
-    font-family: 微软雅黑, sans-serif;
-    font-weight: 300;
-    margin: 16px auto;
-  }
-  a {
-    color: #08fdd8;
-    text-decoration: underline;
-  }
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 30%;
+	vertical-align: middle;
+	display: table-cell;
+	max-height: 90%;
+	.shake {
+		will-change: transform;
+		transition: all 0.3s ease-out;
+	}
+	.contact-us {
+		width: 100%;
+	}
+	#contact-form {
+		.input-text {
+			width: 100%;
+			border: 0;
+			background: #37393b;
+			height: 50px;
+			font-size: 16px;
+			color: #8d8d8d;
+			padding: 0 20px;
+			box-sizing: border-box;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				clear: both;
+				overflow: hidden;
+				display: block;
+				&:nth-of-type(1),
+				&:nth-of-type(2) {
+					width: 49%;
+					float: left;
+					clear: none;
+					margin-left: 0;
+					margin-bottom: 10px;
+				}
+				&:nth-of-type(2) {
+					margin-left: 2%;
+				}
+				&:nth-of-type(4) textarea {
+					width: 100%;
+					height: 50px;
+					min-height: 150px;
+					margin: 10px 0;
+					padding: 20px;
+					box-sizing: border-box;
+				}
+				&:nth-of-type(5) input {
+					color: #08fdd8;
+					font-size: 14px;
+					letter-spacing: 3px;
+					padding: 15px 10px;
+					border: 1px solid #08fdd8;
+					width: auto;
+					height: auto;
+					border-radius: 4px;
+					float: right;
+					text-align: center;
+					margin-right: 10px;
+					transition: all 0.2s linear;
+					&:hover {
+						color: #000;
+						background: #08fdd8;
+					}
+				}
+			}
+		}
+	}
+	h1 {
+		font-size: 53px;
+		font-family: 微软雅黑;
+		color: #08fdd8;
+		font-weight: 600;
+		line-height: 50px;
+		margin-top: 0;
+		margin-bottom: 40px;
+		position: relative;
+		display: block;
+		&::before {
+			content: '<h1>';
+			font-family: $font-style-hand;
+			color: #515152;
+			font-size: 17px;
+			position: absolute;
+			margin-top: -35px;
+		}
+		&::after {
+			content: '<h1>';
+			font-family: $font-style-hand;
+			color: #515152;
+			font-size: 17px;
+			position: absolute;
+			bottom: -40px;
+			left: 0px;
+		}
+	}
+	p {
+		color: #fff;
+		font-family: 微软雅黑, sans-serif;
+		font-weight: 300;
+		margin: 16px auto;
+	}
+	a {
+		color: #08fdd8;
+		text-decoration: underline;
+	}
 }
 .map-start {
-  
-  background: rgba(255, 255, 255, 0.1);
-  float: right;
-  width: 53%;
-  height: 110%;
-  // margin-top: -3%;
-  position: position;
+	background: rgba(255, 255, 255, 0.1);
+	float: right;
+	width: 53%;
+	height: 110%;
+	// margin-top: -3%;
+	position: position;
 }
-#map-coming{
-  margin-left: 5%;
-  margin-top: 5%;
-  width: 90%;
-  height: 84%;
+#map-coming {
+	margin-left: 5%;
+	margin-top: 5%;
+	width: 90%;
+	height: 84%;
 }

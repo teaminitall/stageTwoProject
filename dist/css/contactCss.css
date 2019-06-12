@@ -3,7 +3,7 @@
   *zoom: 1; }
 
 .clearfix:after {
-  content: " ";
+  content: ' ';
   display: table;
   height: 0;
   line-height: 0;
@@ -34,8 +34,8 @@
   position: absolute;
   bottom: 50px;
   left: 80px;
-  font-size: 12px;
-  font-family: "ChannelSlanted2", cursive; }
+  font-size: 17px;
+  font-family: "La Belle Aurore", cursive; }
 
 .text-words {
   position: absolute;
@@ -111,17 +111,17 @@
     position: relative;
     display: block; }
     .text-words h1::before {
-      content: "<h1>";
-      font-family: "ChannelSlanted2", cursive;
+      content: '<h1>';
+      font-family: "La Belle Aurore", cursive;
       color: #515152;
-      font-size: 12px;
+      font-size: 17px;
       position: absolute;
       margin-top: -35px; }
     .text-words h1::after {
-      content: "<h1>";
-      font-family: "ChannelSlanted2", cursive;
+      content: '<h1>';
+      font-family: "La Belle Aurore", cursive;
       color: #515152;
-      font-size: 12px;
+      font-size: 17px;
       position: absolute;
       bottom: -40px;
       left: 0px; }
