@@ -3,7 +3,6 @@ const imageMin = require('gulp-imagemin');
 const minify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const cssMin = require('gulp-minify-css');
-const concat = require('gulp-concat');
 /* Top lv functions gulp顶级函数
 gulp.task 定义任务
 gulp.src  指定源文件
