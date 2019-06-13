@@ -108,11 +108,11 @@ header {
 			justify-content: space-between;
 			width: 136px;
 			line-height: 59px;
-
+			margin-right: 1rem;
 			li {
 				.iconfont {
 					color: #4d4d4e;
-					font-size: 12px;
+					font-size: 15px;
 
 					&:hover {
 						color: $color-Theme-Green;
