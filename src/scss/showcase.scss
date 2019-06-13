@@ -1,0 +1,54 @@
+$color-Bg-Black: #181818;
+$color-Theme-Green: #08fdd8;
+$color-Italic: #515152;
+$color-Subtitle: #8d8d8d;
+$color-Bg-Grey: #252627;
+$color-Theme-Red: #fc0853;
+$opacity-100: 100;
+$opacity-0: 0;
+
+#on-page {
+	color: $color-Theme-Green;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: '微软雅黑', Georgia, Serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: $color-Bg-Grey;
+}
+.img {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	.imgBox {
+		width: 20%;
+		height: 20%;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		display: flex;
+		position: relative;
+		img {
+			// position: absolute;
+			width: 100%;
+			height: 100%;
+			// left: 0;
+			// top: 0;
+			cursor: pointer;
+		}
+		// &:hover .img01 {
+		// 	position: absolute;
+		// 	width: 105%;
+		// 	height: 105%;
+		// 	transition: all 0.5s ease-out;
+		// }
+	}
+}
