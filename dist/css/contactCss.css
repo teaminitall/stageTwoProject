@@ -115,6 +115,7 @@
       font-family: "La Belle Aurore", cursive;
       color: #515152;
       font-size: 17px;
+      font-weight: normal;
       position: absolute;
       margin-top: -35px; }
     .text-words h1::after {
@@ -123,6 +124,7 @@
       color: #515152;
       font-size: 17px;
       position: absolute;
+      font-weight: normal;
       bottom: -40px;
       left: 0px; }
   .text-words p {

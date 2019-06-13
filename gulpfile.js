@@ -44,8 +44,21 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest('dist/css'));
 });
 
+//font文件夹转至dist
+
+gulp.task('font', function() {
+	gulp.src('src/font/*').pipe(gulp.dest('dist/font'));
+});
+
 // //设置默认任务 gulp task"default"
-gulp.task('default', ['message', 'copyHtml', 'imageMin', 'minify', 'sass']);
+gulp.task('default', [
+	'message',
+	'copyHtml',
+	'imageMin',
+	'minify',
+	'sass',
+	'font'
+]);
 
 //定义监视任务 触发更改保存自动处理
 gulp.task('watch', function() {
@@ -53,4 +66,5 @@ gulp.task('watch', function() {
 	gulp.watch('src/img/*', ['imageMin']);
 	gulp.watch('src/scss/*.scss', ['sass']);
 	gulp.watch('src/*.html', ['copyHtml']);
+	gulp.watch('src/font/*', ['font']);
 });
