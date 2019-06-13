@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const imageMin = require('gulp-imagemin');
 const minify = require('gulp-uglify');
 const sass = require('gulp-sass');
+const cssMin = require('gulp-minify-css');
+const concat = require('gulp-concat');
 /* Top lv functions gulp顶级函数
 gulp.task 定义任务
 gulp.src  指定源文件
@@ -20,7 +22,13 @@ gulp.task('copyHtml', function() {
 	gulp.src('src/*.html').pipe(gulp.dest('dist'));
 });
 
-// //最小化图片至dist
+//font文件夹转至dist
+
+gulp.task('font', function() {
+	gulp.src('src/font/*').pipe(gulp.dest('dist/font'));
+});
+
+// 最小化图片至dist
 gulp.task('imageMin', function() {
 	gulp
 		.src('src/img/*')
@@ -28,7 +36,7 @@ gulp.task('imageMin', function() {
 		.pipe(gulp.dest('dist/img'));
 });
 
-// //最小化js代码至dist
+// 最小化js代码至dist
 gulp.task('minify', function() {
 	gulp
 		.src('src/js/*.js')
@@ -36,18 +44,14 @@ gulp.task('minify', function() {
 		.pipe(gulp.dest('dist/js'));
 });
 
-// //编译SASS为CSS至dist
+// 编译SASS为CSS并最小化至dist
 gulp.task('sass', function() {
 	gulp
 		.src('src/scss/*.scss')
+		// .pipe(concat('style.scss'))
 		.pipe(sass().on('error', sass.logError))
+		.pipe(cssMin())
 		.pipe(gulp.dest('dist/css'));
-});
-
-//font文件夹转至dist
-
-gulp.task('font', function() {
-	gulp.src('src/font/*').pipe(gulp.dest('dist/font'));
 });
 
 // //设置默认任务 gulp task"default"
